@@ -338,6 +338,7 @@ fn main() {
 
     let (ref mut ctx, ref mut event_loop) = ContextBuilder::new("ggez/specs", "Fudance")
         .conf(c)
+        .add_resource_path(resource_dir)
         .build()
         .unwrap();
 
